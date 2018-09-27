@@ -4,7 +4,7 @@
     <FlockBanner>This is a banner!</FlockBanner>
     <FlockButton>Submit</FlockButton>
     <FAB :expand="expand">
-      <FABItem href="#" style="background-color:red" tooltip="Google+">A</FABItem>
+      <FABItem @click="test" href="#" style="background-color:red" tooltip="Google+">A</FABItem>
       <FABItem href="#" tooltip="Google+">B</FABItem>
       <FABItem href="#" tooltip="Google+">C</FABItem>
       <FABItem href="#" tooltip="Google+">D</FABItem>
@@ -64,7 +64,7 @@ a {
 }
 .trigger {
   /* -webkit-transition-delay: 25ms;
-                            transition-delay: 25ms; */
+                              transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }

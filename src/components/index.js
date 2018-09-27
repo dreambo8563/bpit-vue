@@ -1,7 +1,7 @@
 // import Vue from "vue";
 import FlockButton from "./Button.vue";
 import FlockBanner from "./Banner.vue";
-import FAB from "./FAB/FAB.vue";
+import FAB from "./FAB/index.vue";
 import FABTrigger from "./FAB/FABTrigger.vue";
 import FABItem from "./FAB/FABItem.vue";
 

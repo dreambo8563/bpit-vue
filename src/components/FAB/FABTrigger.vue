@@ -1,7 +1,7 @@
 <template>
-    <a @click="trigger" class="bpit-fab-trigger">
-        <slot></slot>
-    </a>
+  <a @click="trigger" class="bpit-fab-trigger">
+    <slot></slot>
+  </a>
 </template>
 <script>
 export default {
@@ -24,5 +24,7 @@ export default {
   position: relative;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+  /* overflow: hidden; */
+  cursor: pointer;
 }
 </style>

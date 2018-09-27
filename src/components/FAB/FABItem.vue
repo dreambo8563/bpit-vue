@@ -1,10 +1,16 @@
 <template>
-  <a class="bpit-fab-buttons">
+  <a @click="click" class="bpit-fab-buttons">
     <slot></slot>
   </a>
 </template>
 <script>
-export default {};
+export default {
+  methods: {
+    click(e) {
+      this.$emit("click", e);
+    }
+  }
+};
 </script>
 <style scoped>
 [tooltip]:before {
@@ -36,10 +42,6 @@ export default {};
     0px 4px 12px -7px rgba(0, 0, 0, 0.15);
   border-radius: 50%;
   display: block;
-  width: 56px;
-  height: 56px;
-  margin: 20px auto 0;
-  position: relative;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
 }
@@ -51,10 +53,11 @@ export default {};
 }
 
 .bpit-fab-buttons {
-  width: 40px;
-  height: 40px;
+  width: 0px;
+  height: 0px;
   margin: 20px auto 0;
   opacity: 0;
+  font-size: 0em;
   -webkit-transform: translateY(50px);
   -ms-transform: translateY(50px);
   transform: translateY(50px);
