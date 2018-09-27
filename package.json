@@ -1,17 +1,26 @@
 {
   "name": "@bpit/vue",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": false,
   "main": "./dist/tal.common.js",
+  "author": "dreambo8563",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
     "build-bundle": "vue-cli-service build --target lib --name tal ./src/components/index.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/dreambo8563/bpit-vue.git"
+  },
   "dependencies": {
     "vue": "^2.5.17"
   },
+  "bugs": {
+    "url": "https://github.com/dreambo8563/bpit-vue/issues"
+  },
+  "license": "MIT",
   "devDependencies": {
     "@vue/cli-plugin-babel": "^3.0.4",
     "@vue/cli-plugin-eslint": "^3.0.4",
