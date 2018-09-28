@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: "bpit-fab-trigger",
   methods: {
     trigger(e) {
       this.$emit("click", e);
@@ -24,7 +25,8 @@ export default {
   position: relative;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
-  /* overflow: hidden; */
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
 }
 </style>

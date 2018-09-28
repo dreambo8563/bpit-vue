@@ -29,3 +29,32 @@ npm run test
 ```
 npm run lint
 ```
+
+### import on demand
+
+babel.config.js
+
+```js
+plugins: [
+  [
+    "import",
+    {
+      libraryName: "@bpit/vue",
+      camel2DashComponentName: false,
+      customName: name => {
+        return `@bpit/vue/src/components/${name}`
+      }
+    }
+  ]
+]
+```
+
+#### import components
+
+```js
+import { FlockBanner, FAB, FlockButton } from "@bpit/vue"
+
+const FABItem = FAB.FABItem
+const FABTrigger = FAB.FABTrigger
+const FABContainer = FAB.FABContainer
+```

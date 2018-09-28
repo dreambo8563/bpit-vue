@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: "bpit-fab-item",
   methods: {
     click(e) {
       this.$emit("click", e);
@@ -44,6 +45,7 @@ export default {
   display: block;
   -webkit-transition: all 0.1s ease-out;
   transition: all 0.1s ease-out;
+  user-select: none;
 }
 
 .bpit-fab-buttons:active,

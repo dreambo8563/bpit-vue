@@ -1,20 +1,9 @@
-// import Vue from "vue";
-import FlockButton from "./Button.vue";
-import FlockBanner from "./Banner.vue";
-import FAB from "./FAB/index.vue";
+import FlockBanner from "./FlockBanner/FlockBanner.vue";
+import FlockButton from "./FlockButton/FlockButton.vue";
+import FABContainer from "./FAB/FAB.vue";
 import FABTrigger from "./FAB/FABTrigger.vue";
 import FABItem from "./FAB/FABItem.vue";
 
-// const Components = {
-//   FlockButton,
-//   FlockBanner
-// };
+export { FlockBanner, FlockButton, FABContainer, FABTrigger, FABItem };
 
-// Object.keys(Components).forEach(name => {
-//   Vue.component(name, Components[name]);
-// });
-
-// export default Components;
-export { FlockButton, FlockBanner, FAB, FABTrigger, FABItem };
-
-export default { FlockButton, FlockBanner, FAB, FABTrigger, FABItem };
+export default { FlockBanner, FlockButton, FABContainer, FABTrigger, FABItem };

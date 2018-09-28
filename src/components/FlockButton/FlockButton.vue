@@ -41,7 +41,7 @@ export default {
 };
 </script>
 <style lang="scss" scoped>
-@import "../assets/sass/mixins.scss";
+@import "../../assets/sass/mixins.scss";
 @mixin onHover($color) {
   box-shadow: inset 0 -3px 0 0 $color;
 }

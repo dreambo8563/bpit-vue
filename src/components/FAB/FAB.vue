@@ -5,6 +5,7 @@
 </template>
 <script>
 export default {
+  name: "bpit-fab",
   props: {
     expand: {
       type: Boolean,

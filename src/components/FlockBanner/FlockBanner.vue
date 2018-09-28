@@ -1,7 +1,7 @@
 <template>
-    <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
-        <slot></slot>
-    </div>
+  <div class="banner" :style="bannerStyles" :class="`banner__${position}`">
+    <slot></slot>
+  </div>
 </template>
 <script>
 const defaultStyles = {

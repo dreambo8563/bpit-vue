@@ -3,24 +3,19 @@
     <h1>{{ msg }}</h1>
     <FlockBanner>This is a banner!</FlockBanner>
     <FlockButton>Submit</FlockButton>
-    <FAB :expand="expand">
+    <FABContainer :expand="expand">
       <FABItem @click="test" href="#" style="background-color:red" tooltip="Google+">A</FABItem>
       <FABItem href="#" tooltip="Google+">B</FABItem>
       <FABItem href="#" tooltip="Google+">C</FABItem>
       <FABItem href="#" tooltip="Google+">D</FABItem>
       <FABTrigger @click="test" class="trigger" tooltip="share"></FABTrigger>
-    </FAB>
+    </FABContainer>
   </div>
 </template>
 
 <script>
-import {
-  FlockBanner,
-  FlockButton,
-  FAB,
-  FABItem,
-  FABTrigger
-} from "@/components";
+import { FlockBanner, FlockButton } from "@/components";
+import { FABContainer, FABItem, FABTrigger } from "@/components/FAB";
 
 export default {
   name: "HelloWorld",
@@ -33,7 +28,7 @@ export default {
   components: {
     FlockBanner,
     FlockButton,
-    FAB,
+    FABContainer,
     FABTrigger,
     FABItem
   },
@@ -64,7 +59,7 @@ a {
 }
 .trigger {
   /* -webkit-transition-delay: 25ms;
-                              transition-delay: 25ms; */
+                                                                        transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }
