@@ -1,16 +1,11 @@
 <template>
-  <a @click="trigger" class="bpit-fab-trigger">
+  <a @click="$emit('click', $event)" class="bpit-fab-trigger">
     <slot></slot>
   </a>
 </template>
 <script>
 export default {
-  name: "bpit-fab-trigger",
-  methods: {
-    trigger(e) {
-      this.$emit("click", e);
-    }
-  }
+  name: "bpit-fab-trigger"
 };
 </script>
 <style scoped>

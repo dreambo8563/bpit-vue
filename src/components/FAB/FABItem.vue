@@ -1,16 +1,11 @@
 <template>
-  <a @click="click" class="bpit-fab-buttons">
+  <a @click="$emit('click', $event)" class="bpit-fab-buttons">
     <slot></slot>
   </a>
 </template>
 <script>
 export default {
-  name: "bpit-fab-item",
-  methods: {
-    click(e) {
-      this.$emit("click", e);
-    }
-  }
+  name: "bpit-fab-item"
 };
 </script>
 <style scoped>
