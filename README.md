@@ -32,6 +32,8 @@ npm run lint
 
 ### import on demand
 
+> npm install babel-plugin-import --save-dev
+
 babel.config.js
 
 ```js
