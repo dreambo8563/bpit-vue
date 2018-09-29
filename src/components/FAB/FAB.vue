@@ -26,6 +26,7 @@ export default {
   position: fixed;
   margin: 1em;
   right: 0px;
+  z-index: 2;
 }
 
 .bpit-fab-container.open .bpit-fab-buttons {
