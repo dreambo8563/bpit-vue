@@ -1,0 +1,44 @@
+.bpit-hover-animation {
+  position: relative;
+  letter-spacing: 0.15em;
+  margin: 0 auto;
+  padding: 1rem 2.5rem;
+  background: transparent;
+  outline: none;
+  font-size: 28px;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55) 0.15s;
+}
+.bpit-hover-animation::after,
+.bpit-hover-animation::before {
+  content: "";
+  position: absolute;
+  height: 40%;
+  width: 10%;
+  transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  z-index: -2;
+  border-radius: 50%;
+  -webkit-animation: grow 1s infinite;
+  animation: grow 1s infinite;
+}
+
+.bpit-hover-animation:hover {
+  color: white;
+}
+.bpit-hover-animation:hover::before,
+.bpit-hover-animation:hover::after {
+  top: 0;
+  -webkit-transform: skewx(-10deg);
+  transform: skewx(-10deg);
+  height: 100%;
+  width: 100%;
+  border-radius: 0;
+  -webkit-animation: none;
+  animation: none;
+}
+.bpit-hover-animation:hover::after {
+  left: 0rem;
+}
+.bpit-hover-animation:hover::before {
+  top: 0.5rem;
+  left: 0.35rem;
+}

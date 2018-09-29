@@ -1,6 +1,7 @@
 <template>
   <div class="hello">
-    <h1>{{ msg }}</h1>
+    <h1 class="myclass">{{ msg }}</h1>
+
     <FlockBanner>This is a banner!</FlockBanner>
     <FlockButton>Submit</FlockButton>
     <FlockButton :disabled="true">Submit</FlockButton>
@@ -19,12 +20,28 @@
       <FABItem href="#" tooltip="Google+">D</FABItem>
       <FABTrigger @click="test" class="trigger" tooltip="share"></FABTrigger>
     </FABContainer>
+    <br>
+    <br>
+    <a v-HoverAnimation="{textColor: '#e85a19', backgroundColor: '#f5ce62',foregroundColor:'blue'}"> became hover animate</a>
+
+    <br>
+    <br>
+    <span v-HoverAnimation="{textColor: 'black', backgroundColor: '#c92918',foregroundColor:'#e74c3c'}">
+      span hover animate
+    </span>
   </div>
 </template>
 
 <script>
-import { FlockBanner, FlockButton, GradientButton } from "@/components";
-import { FABContainer, FABItem, FABTrigger } from "@/components/FAB";
+import {
+  FlockBanner,
+  FlockButton,
+  GradientButton,
+  HoverAnimation,
+  FABContainer,
+  FABTrigger,
+  FABItem
+} from "./index.js";
 
 export default {
   name: "HelloWorld",
@@ -34,6 +51,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
+  directives: { ...HoverAnimation },
   components: {
     FlockBanner,
     FlockButton,
@@ -72,7 +90,7 @@ a {
 }
 .trigger {
   /* -webkit-transition-delay: 25ms;
-                                                                                                                  transition-delay: 25ms; */
+                                                                                                                                                                                                                                    transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }

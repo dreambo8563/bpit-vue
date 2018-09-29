@@ -1,6 +1,6 @@
 {
   "name": "@bpit/vue",
-  "version": "0.1.10",
+  "version": "0.1.11",
   "private": false,
   "author": "dreambo8563",
   "main": "./dist/tal.common.js",
@@ -8,7 +8,7 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "build-bundle": "npm run lint && vue-cli-service build --target lib --name tal ./src/components/index.js"
+    "build-bundle": "npm run lint && vue-cli-service build --target lib --name tal ./src/index.js"
   },
   "repository": {
     "type": "git",
