@@ -4,13 +4,14 @@
     <img
       v-if="loading"
       class="loader"
-      src="@/assets/loader-green.svg"
+      :src="loadingIcon"
       height="32px"
       width="32px"
     />
   </button>
 </template>
 <script>
+import loadingIcon from "../../assets/loader-green.svg";
 export default {
   name: "FlockButton",
   props: {
@@ -37,6 +38,11 @@ export default {
       default: false,
       type: Boolean
     }
+  },
+  data() {
+    return {
+      loadingIcon
+    };
   }
 };
 </script>

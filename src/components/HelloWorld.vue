@@ -3,7 +3,6 @@
     <h1>{{ msg }}</h1>
     <FlockBanner>This is a banner!</FlockBanner>
     <FlockButton>Submit</FlockButton>
-
     <FlockButton :disabled="true">Submit</FlockButton>
     <FlockButton type="secondary">Submit</FlockButton>
     <FlockButton type="destructive">Submit</FlockButton>
@@ -67,7 +66,7 @@ a {
 }
 .trigger {
   /* -webkit-transition-delay: 25ms;
-                                                                                        transition-delay: 25ms; */
+                                                                                          transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }
