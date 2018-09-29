@@ -4,7 +4,7 @@ import FABContainer from "./components/FAB/FAB.vue";
 import FABTrigger from "./components/FAB/FABTrigger.vue";
 import FABItem from "./components/FAB/FABItem.vue";
 import GradientButton from "./components/GradientButton/GradientButton.vue";
-import HoverAnimation from "./directives/HoverAnimation";
+import HoverAnimation from "./components/HoverAnimation";
 
 export {
   FlockBanner,
