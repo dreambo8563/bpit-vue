@@ -1,9 +1,9 @@
 {
   "name": "@bpit/vue",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "private": false,
-  "main": "./dist/tal.common.js",
   "author": "dreambo8563",
+  "main": "./dist/tal.common.js",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",

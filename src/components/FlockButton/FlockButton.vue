@@ -1,10 +1,10 @@
 <template>
-    <button class="btn" :disabled="disabled" :class="`${type} ${invert ? 'invert' : ''} ${size}`" @click="$emit('click', $event)">
-        <slot>Submit</slot>
-        <img
+  <button class="btn" :disabled="disabled" :class="`${type} ${invert ? 'invert' : ''} ${size}`" @click="$emit('click', $event)">
+    <slot>Submit</slot>
+    <img
       v-if="loading"
       class="loader"
-      src="https://static.flock.co/flock/apps/loader-green.svg"
+      src="@/assets/loader-green.svg"
       height="32px"
       width="32px"
     />
@@ -68,6 +68,9 @@ export default {
   }
   &.full {
     width: 100%;
+  }
+  &.half {
+    width: 50%;
   }
   &.primary {
     &:active {
