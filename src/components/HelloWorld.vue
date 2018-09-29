@@ -10,6 +10,8 @@
     <FlockButton :loading="true">Submit</FlockButton>
     <FlockButton size="half">Submit</FlockButton>
     <FlockButton size="full">Submit</FlockButton>
+    <GradientButton :disabled="true">GradientButton</GradientButton>
+    <GradientButton @click="log" type="2">GradientButton</GradientButton>
     <FABContainer :expand="expand">
       <FABItem @click="test" href="#" style="background-color:red" tooltip="Google+">A</FABItem>
       <FABItem href="#" tooltip="Google+">B</FABItem>
@@ -21,7 +23,7 @@
 </template>
 
 <script>
-import { FlockBanner, FlockButton } from "@/components";
+import { FlockBanner, FlockButton, GradientButton } from "@/components";
 import { FABContainer, FABItem, FABTrigger } from "@/components/FAB";
 
 export default {
@@ -37,11 +39,15 @@ export default {
     FlockButton,
     FABContainer,
     FABTrigger,
-    FABItem
+    FABItem,
+    GradientButton
   },
   methods: {
     test() {
       this.expand = !this.expand;
+    },
+    log() {
+      console.log("log here");
     }
   }
 };
@@ -66,7 +72,7 @@ a {
 }
 .trigger {
   /* -webkit-transition-delay: 25ms;
-                                                                                          transition-delay: 25ms; */
+                                                                                                                  transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
 }
