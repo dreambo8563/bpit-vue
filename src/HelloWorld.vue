@@ -29,6 +29,17 @@
     <span v-HoverAnimation="{textColor: 'black', backgroundColor: '#c92918',foregroundColor:'#e74c3c'}">
       span hover animate
     </span>
+    <br><br>
+    <TransformContainer defaultClass="transform" openClass="openDialog" :open="expand">
+      <div class="button-copy" v-if="!expand" @click="expand = true">
+        Add Product
+      </div>
+      <div v-else class="cancel ">
+        <span @click="expand=false">
+          Cancel
+        </span>
+      </div>
+    </TransformContainer>
   </div>
 </template>
 
@@ -40,7 +51,8 @@ import {
   HoverAnimation,
   FABContainer,
   FABTrigger,
-  FABItem
+  FABItem,
+  TransformContainer
 } from "./index.js";
 
 export default {
@@ -58,7 +70,8 @@ export default {
     FABContainer,
     FABTrigger,
     FABItem,
-    GradientButton
+    GradientButton,
+    TransformContainer
   },
   methods: {
     test() {
@@ -72,7 +85,7 @@ export default {
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
+<style lang="scss" scoped>
 h1,
 h2 {
   font-weight: normal;
@@ -89,9 +102,32 @@ a {
   color: #42b983;
 }
 .trigger {
-  /* -webkit-transition-delay: 25ms;
-                                                                                                                                                                                                                                    transition-delay: 25ms; */
   background-image: url("https://cbwconline.com/IMG/Share.svg");
   background-size: contain;
+}
+
+.button-copy {
+  text-align: center;
+  line-height: 144px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #f7f7f7;
+}
+
+.transform {
+  background-color: #ffc145;
+  height: 144px;
+  width: 144px;
+  border-radius: 72px;
+  box-shadow: 0 4px 16px 0 rgba(0, 0, 0, 0.07);
+  cursor: pointer;
+}
+.openDialog {
+  background-color: #fafafa;
+  padding: 18px 32px;
+  border-radius: 5px;
+  width: 420px;
+  height: 398px;
+  cursor: default;
 }
 </style>

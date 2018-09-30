@@ -5,6 +5,7 @@ import FABTrigger from "./components/FAB/FABTrigger.vue";
 import FABItem from "./components/FAB/FABItem.vue";
 import GradientButton from "./components/GradientButton/GradientButton.vue";
 import HoverAnimation from "./components/HoverAnimation";
+import TransformContainer from "./components/TransformContainer";
 
 export {
   FlockBanner,
@@ -13,7 +14,8 @@ export {
   FABTrigger,
   FABItem,
   GradientButton,
-  HoverAnimation
+  HoverAnimation,
+  TransformContainer
 };
 
 export default {
@@ -23,5 +25,6 @@ export default {
   FABTrigger,
   FABItem,
   GradientButton,
-  HoverAnimation
+  HoverAnimation,
+  TransformContainer
 };
