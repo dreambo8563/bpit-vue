@@ -51,6 +51,11 @@
     <br>
     <BouncingLoader></BouncingLoader>
     <BouncingLoader color="red"></BouncingLoader>
+    <br>
+    <br>
+    <DonutSpinner></DonutSpinner>
+    <DonutSpinner style="color:red"></DonutSpinner>
+    <DonutSpinner style="color:pink"></DonutSpinner>
   </div>
 
 </template>
@@ -66,7 +71,8 @@ import {
   FABItem,
   TransformContainer,
   HoverMagicUnderline,
-  BouncingLoader
+  BouncingLoader,
+  DonutSpinner
 } from "./index.js";
 
 export default {
@@ -86,7 +92,8 @@ export default {
     FABItem,
     GradientButton,
     TransformContainer,
-    BouncingLoader
+    BouncingLoader,
+    DonutSpinner
   },
   methods: {
     test() {

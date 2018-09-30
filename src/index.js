@@ -6,6 +6,7 @@ import FABItem from "./components/FAB/FABItem";
 import GradientButton from "./components/GradientButton/GradientButton";
 import TransformContainer from "./components/TransformContainer";
 import BouncingLoader from "./components/BouncingLoader";
+import DonutSpinner from "./components/DonutSpinner";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -21,7 +22,8 @@ export {
   HoverAnimation,
   TransformContainer,
   HoverMagicUnderline,
-  BouncingLoader
+  BouncingLoader,
+  DonutSpinner
 };
 
 export default {
@@ -34,5 +36,6 @@ export default {
   HoverAnimation,
   TransformContainer,
   HoverMagicUnderline,
-  BouncingLoader
+  BouncingLoader,
+  DonutSpinner
 };
