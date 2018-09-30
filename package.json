@@ -1,6 +1,6 @@
 {
   "name": "@bpit/vue",
-  "version": "0.1.14",
+  "version": "0.1.15",
   "private": false,
   "author": "dreambo8563",
   "main": "./dist/tal.common.js",

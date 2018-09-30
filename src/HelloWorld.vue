@@ -40,6 +40,12 @@
         </span>
       </div>
     </TransformContainer>
+    <br>
+    <br>
+
+    <h2>Wow this one is super incredibly cool, and this
+      <span v-HoverMagicUnderline="{leftColor: 'black',rightColor: 'blue'}">one is on Multiple Lines!</span>
+      I wish I had found this like thirty projects ago when I was representing the lollipop guild.</h2>
   </div>
 </template>
 
@@ -52,7 +58,8 @@ import {
   FABContainer,
   FABTrigger,
   FABItem,
-  TransformContainer
+  TransformContainer,
+  HoverMagicUnderline
 } from "./index.js";
 
 export default {
@@ -63,7 +70,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
-  directives: { ...HoverAnimation },
+  directives: { ...HoverAnimation, ...HoverMagicUnderline },
   components: {
     FlockBanner,
     FlockButton,

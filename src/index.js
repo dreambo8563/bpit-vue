@@ -4,8 +4,11 @@ import FABContainer from "./components/FAB/FAB.vue";
 import FABTrigger from "./components/FAB/FABTrigger.vue";
 import FABItem from "./components/FAB/FABItem.vue";
 import GradientButton from "./components/GradientButton/GradientButton.vue";
-import HoverAnimation from "./components/HoverAnimation";
 import TransformContainer from "./components/TransformContainer";
+
+// directives
+import HoverAnimation from "./components/HoverAnimation";
+import HoverMagicUnderline from "./components/HoverMagicUnderline";
 
 export {
   FlockBanner,
@@ -15,7 +18,8 @@ export {
   FABItem,
   GradientButton,
   HoverAnimation,
-  TransformContainer
+  TransformContainer,
+  HoverMagicUnderline
 };
 
 export default {
@@ -26,5 +30,6 @@ export default {
   FABItem,
   GradientButton,
   HoverAnimation,
-  TransformContainer
+  TransformContainer,
+  HoverMagicUnderline
 };
