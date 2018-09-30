@@ -1,10 +1,11 @@
-import FlockBanner from "./components/FlockBanner/FlockBanner.vue";
-import FlockButton from "./components/FlockButton/FlockButton.vue";
-import FABContainer from "./components/FAB/FAB.vue";
-import FABTrigger from "./components/FAB/FABTrigger.vue";
-import FABItem from "./components/FAB/FABItem.vue";
-import GradientButton from "./components/GradientButton/GradientButton.vue";
+import FlockBanner from "./components/FlockBanner/FlockBanner";
+import FlockButton from "./components/FlockButton/FlockButton";
+import FABContainer from "./components/FAB/FAB";
+import FABTrigger from "./components/FAB/FABTrigger";
+import FABItem from "./components/FAB/FABItem";
+import GradientButton from "./components/GradientButton/GradientButton";
 import TransformContainer from "./components/TransformContainer";
+import BouncingLoader from "./components/BouncingLoader";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -19,7 +20,8 @@ export {
   GradientButton,
   HoverAnimation,
   TransformContainer,
-  HoverMagicUnderline
+  HoverMagicUnderline,
+  BouncingLoader
 };
 
 export default {
@@ -31,5 +33,6 @@ export default {
   GradientButton,
   HoverAnimation,
   TransformContainer,
-  HoverMagicUnderline
+  HoverMagicUnderline,
+  BouncingLoader
 };

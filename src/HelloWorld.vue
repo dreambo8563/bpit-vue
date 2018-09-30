@@ -46,7 +46,13 @@
     <h2>Wow this one is super incredibly cool, and this
       <span v-HoverMagicUnderline="{leftColor: 'black',rightColor: 'blue'}">one is on Multiple Lines!</span>
       I wish I had found this like thirty projects ago when I was representing the lollipop guild.</h2>
+
+    <br>
+    <br>
+    <BouncingLoader></BouncingLoader>
+    <BouncingLoader color="red"></BouncingLoader>
   </div>
+
 </template>
 
 <script>
@@ -59,7 +65,8 @@ import {
   FABTrigger,
   FABItem,
   TransformContainer,
-  HoverMagicUnderline
+  HoverMagicUnderline,
+  BouncingLoader
 } from "./index.js";
 
 export default {
@@ -78,7 +85,8 @@ export default {
     FABTrigger,
     FABItem,
     GradientButton,
-    TransformContainer
+    TransformContainer,
+    BouncingLoader
   },
   methods: {
     test() {
