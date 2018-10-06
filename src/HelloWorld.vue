@@ -56,6 +56,14 @@
     <DonutSpinner></DonutSpinner>
     <DonutSpinner style="color:red"></DonutSpinner>
     <DonutSpinner style="color:pink"></DonutSpinner>
+    <br>
+    <br>
+    <BorderInput :effects="1"></BorderInput>
+    <BorderInput v-model="msg" :effects="2"></BorderInput>
+    <BorderInput :effects="3"></BorderInput>
+    <BorderInput :effects="4"></BorderInput>
+    <BorderInput :effects="5"></BorderInput>
+    <BorderInput :effects="6"></BorderInput>
   </div>
 
 </template>
@@ -72,7 +80,8 @@ import {
   TransformContainer,
   HoverMagicUnderline,
   BouncingLoader,
-  DonutSpinner
+  DonutSpinner,
+  BorderInput
 } from "./index.js";
 
 export default {
@@ -93,7 +102,8 @@ export default {
     GradientButton,
     TransformContainer,
     BouncingLoader,
-    DonutSpinner
+    DonutSpinner,
+    BorderInput
   },
   methods: {
     test() {

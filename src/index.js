@@ -7,6 +7,7 @@ import GradientButton from "./components/GradientButton/GradientButton";
 import TransformContainer from "./components/TransformContainer";
 import BouncingLoader from "./components/BouncingLoader";
 import DonutSpinner from "./components/DonutSpinner";
+import BorderInput from "./components/BorderInput";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -23,7 +24,8 @@ export {
   TransformContainer,
   HoverMagicUnderline,
   BouncingLoader,
-  DonutSpinner
+  DonutSpinner,
+  BorderInput
 };
 
 export default {
@@ -37,5 +39,6 @@ export default {
   TransformContainer,
   HoverMagicUnderline,
   BouncingLoader,
-  DonutSpinner
+  DonutSpinner,
+  BorderInput
 };
