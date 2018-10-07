@@ -57,7 +57,7 @@ export default {
   .effect-2,
   .effect-3 {
     border: 0;
-    padding: 4px 0;
+    padding: 7px 0;
     border-bottom: 1px solid #ccc;
     background-color: transparent;
   }
