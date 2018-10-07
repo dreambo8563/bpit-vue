@@ -64,6 +64,14 @@
     <BorderInput :effects="4"></BorderInput>
     <BorderInput :effects="5"></BorderInput>
     <BorderInput :effects="6"></BorderInput>
+    <br>
+    <br>
+    <LabelInput v-model="msg" label="Name" :effects="1"></LabelInput>
+    <LabelInput v-model="msg" label="Name" :effects="2"></LabelInput>
+    <LabelInput v-model="msg" label="Name" :effects="3"></LabelInput>
+    <LabelInput v-model="msg" label="Name" :effects="4"></LabelInput>
+    <LabelInput v-model="msg" label="Name" :effects="5"></LabelInput>
+    <LabelInput v-model="msg" label="Name" :effects="6"></LabelInput>
   </div>
 
 </template>
@@ -81,7 +89,8 @@ import {
   HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
-  BorderInput
+  BorderInput,
+  LabelInput
 } from "./index.js";
 
 export default {
@@ -103,7 +112,8 @@ export default {
     TransformContainer,
     BouncingLoader,
     DonutSpinner,
-    BorderInput
+    BorderInput,
+    LabelInput
   },
   methods: {
     test() {

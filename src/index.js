@@ -8,6 +8,7 @@ import TransformContainer from "./components/TransformContainer";
 import BouncingLoader from "./components/BouncingLoader";
 import DonutSpinner from "./components/DonutSpinner";
 import BorderInput from "./components/BorderInput";
+import LabelInput from "./components/LabelInput";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -25,7 +26,8 @@ export {
   HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
-  BorderInput
+  BorderInput,
+  LabelInput
 };
 
 export default {
@@ -40,5 +42,6 @@ export default {
   HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
-  BorderInput
+  BorderInput,
+  LabelInput
 };
