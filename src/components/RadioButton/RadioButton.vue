@@ -113,6 +113,7 @@ export default {
     font-size: 1.35em;
     margin: 10px auto;
     height: 30px;
+    line-height: 30px;
     cursor: pointer;
     transition: all 0.25s linear;
   }
