@@ -9,6 +9,8 @@ import BouncingLoader from "./components/BouncingLoader";
 import DonutSpinner from "./components/DonutSpinner";
 import BorderInput from "./components/BorderInput";
 import LabelInput from "./components/LabelInput";
+import RadioButton from "./components/RadioButton";
+import RadioGroup from "./components/RadioGroup";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -27,7 +29,9 @@ export {
   BouncingLoader,
   DonutSpinner,
   BorderInput,
-  LabelInput
+  LabelInput,
+  RadioButton,
+  RadioGroup
 };
 
 export default {
@@ -43,5 +47,7 @@ export default {
   BouncingLoader,
   DonutSpinner,
   BorderInput,
-  LabelInput
+  LabelInput,
+  RadioButton,
+  RadioGroup
 };

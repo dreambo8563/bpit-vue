@@ -72,6 +72,18 @@
     <LabelInput v-model="msg" label="Name" :effects="4"></LabelInput>
     <LabelInput v-model="msg" label="Name" :effects="5"></LabelInput>
     <LabelInput v-model="msg" label="Name" :effects="6"></LabelInput>
+    <br>
+    <br>
+    <RadioGroup v-model="radioG">
+      <RadioButton style="color:red" label="1"></RadioButton>
+      <RadioButton label="2"></RadioButton>
+      <RadioButton style="color:#359be8" label="3">This is in the slot</RadioButton>
+      <RadioButton label="4"></RadioButton>
+    </RadioGroup>
+    <br>
+    <br>
+    <RadioButton :disabled="true" v-model="radio1" label="1">Single v-model</RadioButton>
+
   </div>
 
 </template>
@@ -90,13 +102,17 @@ import {
   BouncingLoader,
   DonutSpinner,
   BorderInput,
-  LabelInput
+  LabelInput,
+  RadioButton,
+  RadioGroup
 } from "./index.js";
 
 export default {
   name: "HelloWorld",
   data() {
     return {
+      radio1: "4",
+      radioG: "3",
       expand: false,
       msg: "Welcome to Your Vue.js App"
     };
@@ -113,7 +129,9 @@ export default {
     BouncingLoader,
     DonutSpinner,
     BorderInput,
-    LabelInput
+    LabelInput,
+    RadioButton,
+    RadioGroup
   },
   methods: {
     test() {
