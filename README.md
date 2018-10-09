@@ -1,6 +1,28 @@
 # bpit-vue
 
-### import on demand
+![](https://raw.githubusercontent.com/dreambo8563/static-assets/master/bpit/100*100.png)
+
+## Intro
+
+### What is bpit/vue?
+
+bpit/vue is not a component UI kit, we didn't have the consistent theme for these components, it's just a collection of effects components.
+
+bpit/vue is a good place for beginners to learn How to create their UI Kits. Now, it's just a showcase of the effects I can gather from the Internet (codepen, github...) and transfered to vue `things`
+
+### What we focus?
+
+We focus on the effects of these components other than functionailties. That's why it's not a ui kit.
+
+We take more time on css part and hope to make it more general and easy to use, so we encapsulate them into vue component/directives.
+
+### Why we need it?
+
+There are so many resources on the Internet, we can make use of them to save time and to be more efficient. bpit/vue collects them, encapsulates them, imporves them.
+
+Install easy && Import on demand && Everything in one place
+
+## import on demand
 
 > npm install babel-plugin-import --save-dev
 
