@@ -83,7 +83,42 @@
     <br>
     <br>
     <RadioButton :disabled="true" v-model="radio1" label="1">Single v-model</RadioButton>
+    <br><br>
+    <SwitchButton :type="1" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="2" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="3" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="4" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="5" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="6" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="7" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="8" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="9" v-model="checked">
+    </SwitchButton>
 
+    <SwitchButton :type="10" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="11" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="12" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="13" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="14" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="15" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="16" v-model="checked">
+    </SwitchButton>
+    <SwitchButton :type="17" v-model="checked">
+    </SwitchButton>
   </div>
 
 </template>
@@ -104,7 +139,8 @@ import {
   BorderInput,
   LabelInput,
   RadioButton,
-  RadioGroup
+  RadioGroup,
+  SwitchButton
 } from "./index.js";
 
 export default {
@@ -114,6 +150,7 @@ export default {
       radio1: "4",
       radioG: "3",
       expand: false,
+      checked: false,
       msg: "Welcome to Your Vue.js App"
     };
   },
@@ -131,7 +168,8 @@ export default {
     BorderInput,
     LabelInput,
     RadioButton,
-    RadioGroup
+    RadioGroup,
+    SwitchButton
   },
   methods: {
     test() {

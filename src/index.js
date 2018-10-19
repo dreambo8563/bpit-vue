@@ -11,6 +11,7 @@ import BorderInput from "./components/BorderInput";
 import LabelInput from "./components/LabelInput";
 import RadioButton from "./components/RadioButton";
 import RadioGroup from "./components/RadioGroup";
+import SwitchButton from "./components/SwitchButton";
 
 // directives
 import HoverAnimation from "./components/HoverAnimation";
@@ -31,7 +32,8 @@ export {
   BorderInput,
   LabelInput,
   RadioButton,
-  RadioGroup
+  RadioGroup,
+  SwitchButton
 };
 
 export default {
@@ -49,5 +51,6 @@ export default {
   BorderInput,
   LabelInput,
   RadioButton,
-  RadioGroup
+  RadioGroup,
+  SwitchButton
 };
