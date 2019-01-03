@@ -22,30 +22,33 @@
     </FABContainer>
     <br>
     <br>
-    <a v-HoverAnimation="{textColor: '#e85a19', backgroundColor: '#f5ce62',foregroundColor:'blue'}"> became hover animate</a>
+    <a
+      v-HoverAnimation="{textColor: '#e85a19', backgroundColor: '#f5ce62',foregroundColor:'blue'}"
+    >became hover animate</a>
 
     <br>
     <br>
-    <span v-HoverAnimation="{textColor: 'black', backgroundColor: '#c92918',foregroundColor:'#e74c3c'}">
-      span hover animate
-    </span>
-    <br><br>
+    <span
+      v-HoverAnimation="{textColor: 'black', backgroundColor: '#c92918',foregroundColor:'#e74c3c'}"
+    >span hover animate</span>
+    <br>
+    <br>
     <TransformContainer defaultClass="transform" openClass="openDialog" :open="expand">
-      <div class="button-copy" v-if="!expand" @click="expand = true">
-        Add Product
-      </div>
-      <div v-else class="cancel ">
-        <span @click="expand=false">
-          Cancel
-        </span>
+      <div class="button-copy" v-if="!expand" @click="expand = true">Add Product</div>
+      <div v-else class="cancel">
+        <span @click="expand=false">Cancel</span>
       </div>
     </TransformContainer>
     <br>
     <br>
 
-    <h2>Wow this one is super incredibly cool, and this
-      <span v-HoverMagicUnderline="{leftColor: 'black',rightColor: 'blue'}">one is on Multiple Lines!</span>
-      I wish I had found this like thirty projects ago when I was representing the lollipop guild.</h2>
+    <h2>
+      Wow this one is super incredibly cool, and this
+      <span
+        v-HoverMagicUnderline="{leftColor: 'black',rightColor: 'blue'}"
+      >one is on Multiple Lines!</span>
+      I wish I had found this like thirty projects ago when I was representing the lollipop guild.
+    </h2>
 
     <br>
     <br>
@@ -83,44 +86,29 @@
     <br>
     <br>
     <RadioButton :disabled="true" v-model="radio1" label="1">Single v-model</RadioButton>
-    <br><br>
-    <SwitchButton :type="1" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="2" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="3" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="4" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="5" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="6" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="7" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="8" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="9" v-model="checked">
-    </SwitchButton>
+    <br>
+    <br>
+    <SwitchButton :type="1" v-model="checked"></SwitchButton>
+    <SwitchButton :type="2" v-model="checked"></SwitchButton>
+    <SwitchButton :type="3" v-model="checked"></SwitchButton>
+    <SwitchButton :type="4" v-model="checked"></SwitchButton>
+    <SwitchButton :type="5" v-model="checked"></SwitchButton>
+    <SwitchButton :type="6" v-model="checked"></SwitchButton>
+    <SwitchButton :type="7" v-model="checked"></SwitchButton>
+    <SwitchButton :type="8" v-model="checked"></SwitchButton>
+    <SwitchButton :type="9" v-model="checked"></SwitchButton>
 
-    <SwitchButton :type="10" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="11" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="12" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="13" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="14" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="15" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="16" v-model="checked">
-    </SwitchButton>
-    <SwitchButton :type="17" v-model="checked">
-    </SwitchButton>
+    <SwitchButton :type="10" v-model="checked"></SwitchButton>
+    <SwitchButton :type="11" v-model="checked"></SwitchButton>
+    <SwitchButton :type="12" v-model="checked"></SwitchButton>
+    <SwitchButton :type="13" v-model="checked"></SwitchButton>
+    <SwitchButton :type="14" v-model="checked"></SwitchButton>
+    <SwitchButton :type="15" v-model="checked"></SwitchButton>
+    <SwitchButton :type="16" v-model="checked"></SwitchButton>
+    <SwitchButton :type="17" v-model="checked"></SwitchButton>
+    <br>
+    <FlockButton v-Waves>Submit</FlockButton>
   </div>
-
 </template>
 
 <script>
@@ -140,7 +128,8 @@ import {
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton
+  SwitchButton,
+  Waves
 } from "./index.js";
 
 export default {
@@ -154,7 +143,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
-  directives: { ...HoverAnimation, ...HoverMagicUnderline },
+  directives: { ...HoverAnimation, ...HoverMagicUnderline, Waves },
   components: {
     FlockBanner,
     FlockButton,

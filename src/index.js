@@ -16,6 +16,7 @@ import SwitchButton from "./components/SwitchButton";
 // directives
 import HoverAnimation from "./components/HoverAnimation";
 import HoverMagicUnderline from "./components/HoverMagicUnderline";
+import Waves from "./components/Waves";
 
 export {
   FlockBanner,
@@ -33,7 +34,8 @@ export {
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton
+  SwitchButton,
+  Waves
 };
 
 export default {
@@ -52,5 +54,6 @@ export default {
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton
+  SwitchButton,
+  Waves
 };
