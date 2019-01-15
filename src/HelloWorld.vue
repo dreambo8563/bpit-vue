@@ -180,7 +180,7 @@ export default {
   },
   mounted() {
     setTimeout(() => {
-      this.showBubble = false
+      this.showBubble = false;
     }, 4000);
   }
 };

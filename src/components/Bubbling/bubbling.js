@@ -38,7 +38,7 @@ export default {
       setTimeout(() => {
         bubbleFrame.remove();
       }, 3000);
-    }, 350);
+    }, 500);
     instances.set(el, handler);
     // return false;
   },

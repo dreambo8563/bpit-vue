@@ -4,7 +4,6 @@
   opacity: 1;
   bottom: 10px;
   background-color: #fff;
-  z-index: -1;
   animation: fadeOutUp 3s;
 }
 @keyframes fadeOutUp {
