@@ -17,6 +17,7 @@ import SwitchButton from "./components/SwitchButton";
 import HoverAnimation from "./components/HoverAnimation";
 import HoverMagicUnderline from "./components/HoverMagicUnderline";
 import Waves from "./components/Waves";
+import Bubbling from "./components/Bubbling";
 
 export {
   FlockBanner,
@@ -35,7 +36,8 @@ export {
   RadioButton,
   RadioGroup,
   SwitchButton,
-  Waves
+  Waves,
+  Bubbling
 };
 
 export default {
@@ -55,5 +57,6 @@ export default {
   RadioButton,
   RadioGroup,
   SwitchButton,
-  Waves
+  Waves,
+  Bubbling
 };

@@ -108,6 +108,14 @@
     <SwitchButton :type="17" v-model="checked"></SwitchButton>
     <br>
     <FlockButton v-Waves>Submit</FlockButton>
+    <h2
+      v-if="showBubble"
+      style="background:black;display:inline-block"
+      v-Bubbling="{color:'blue'}"
+      id="1"
+    >hahhah</h2>
+    <h2 v-if="showBubble" id="31" style="background:black;display:inline-block" v-Bubbling>hahhah</h2>
+    <h2 v-if="!showBubble" id="3" style="background:black;display:inline-block" v-Bubbling>hahhah</h2>
   </div>
 </template>
 
@@ -129,13 +137,15 @@ import {
   RadioButton,
   RadioGroup,
   SwitchButton,
-  Waves
+  Waves,
+  Bubbling
 } from "./index.js";
 
 export default {
   name: "HelloWorld",
   data() {
     return {
+      showBubble: true,
       radio1: "4",
       radioG: "3",
       expand: false,
@@ -143,7 +153,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
-  directives: { ...HoverAnimation, ...HoverMagicUnderline, Waves },
+  directives: { ...HoverAnimation, ...HoverMagicUnderline, Waves, Bubbling },
   components: {
     FlockBanner,
     FlockButton,
@@ -167,6 +177,11 @@ export default {
     log() {
       console.log("log here");
     }
+  },
+  mounted() {
+    setTimeout(() => {
+      this.showBubble = false
+    }, 4000);
   }
 };
 </script>

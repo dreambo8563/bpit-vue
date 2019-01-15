@@ -1,0 +1,23 @@
+.individual-bubble {
+  position: absolute;
+  border-radius: 100%;
+  opacity: 1;
+  bottom: 10px;
+  background-color: #fff;
+  z-index: -1;
+  animation: fadeOutUp 3s;
+}
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+  }
+
+  to {
+    opacity: 0;
+    transform: translate3d(0, -400%, 0);
+  }
+}
+
+.fadeOutUp {
+  animation-name: fadeOutUp;
+}
