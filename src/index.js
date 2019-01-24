@@ -19,6 +19,9 @@ import HoverMagicUnderline from "./components/HoverMagicUnderline";
 import Waves from "./components/Waves";
 import Bubbling from "./components/Bubbling";
 
+// filters
+import placeholder from "./components/Filters/placeholder";
+
 export {
   FlockBanner,
   FlockButton,
@@ -37,7 +40,8 @@ export {
   RadioGroup,
   SwitchButton,
   Waves,
-  Bubbling
+  Bubbling,
+  placeholder
 };
 
 export default {
@@ -58,5 +62,6 @@ export default {
   RadioGroup,
   SwitchButton,
   Waves,
-  Bubbling
+  Bubbling,
+  placeholder
 };

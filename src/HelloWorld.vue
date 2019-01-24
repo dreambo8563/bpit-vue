@@ -107,6 +107,7 @@
     <SwitchButton :type="16" v-model="checked"></SwitchButton>
     <SwitchButton :type="17" v-model="checked"></SwitchButton>
     <br>
+    {{""|placeholder("无")}}
     <FlockButton v-Waves>Submit</FlockButton>
     <h2
       v-if="showBubble"
@@ -138,7 +139,8 @@ import {
   RadioGroup,
   SwitchButton,
   Waves,
-  Bubbling
+  Bubbling,
+  placeholder
 } from "./index.js";
 
 export default {
@@ -154,6 +156,9 @@ export default {
     };
   },
   directives: { ...HoverAnimation, ...HoverMagicUnderline, Waves, Bubbling },
+  filters: {
+    placeholder
+  },
   components: {
     FlockBanner,
     FlockButton,
