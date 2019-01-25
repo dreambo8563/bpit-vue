@@ -1,0 +1,136 @@
+<!DOCTYPE html><html><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=/bpit-vue/favicon.png><style>body {
+      background: #FB5053;
+      margin: 0;
+      padding: 0;
+    }
+
+    #app {
+      height: 100%
+    }
+
+    .hidden {
+      display: none
+    }
+
+    .index-loaders-container {
+      position: fixed;
+      z-index: -1;
+      height: 100%;
+      width: 100%;
+      text-align: center;
+      /* font-size: 0; */
+    }
+
+    .container {
+      height: 100vh;
+      width: 100vw;
+      font-family: Helvetica;
+    }
+
+    .index-loader {
+      height: 20px;
+      width: 250px;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+    }
+
+    .index-loader--dot {
+      animation-name: loader;
+      animation-timing-function: ease-in-out;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+      height: 20px;
+      width: 20px;
+      border-radius: 100%;
+      background-color: black;
+      position: absolute;
+      border: 2px solid white;
+    }
+
+    .index-loader--dot:first-child {
+      background-color: #8cc759;
+      animation-delay: 0.5s;
+    }
+
+    .index-loader--dot:nth-child(2) {
+      background-color: #8c6daf;
+      animation-delay: 0.4s;
+    }
+
+    .index-loader--dot:nth-child(3) {
+      background-color: #ef5d74;
+      animation-delay: 0.3s;
+    }
+
+    .index-loader--dot:nth-child(4) {
+      background-color: #f9a74b;
+      animation-delay: 0.2s;
+    }
+
+    .index-loader--dot:nth-child(5) {
+      background-color: #60beeb;
+      animation-delay: 0.1s;
+    }
+
+    .index-loader--dot:nth-child(6) {
+      background-color: #fbef5a;
+      animation-delay: 0s;
+    }
+
+    .index-loader--text {
+      position: absolute;
+      top: 200%;
+      left: 0;
+      right: 0;
+      width: 4rem;
+      margin: auto;
+    }
+
+    .index-loader--text:after {
+      content: "Loading";
+      font-weight: bold;
+      animation-name: loading-text;
+      animation-duration: 3s;
+      animation-iteration-count: infinite;
+    }
+
+    @keyframes index-loader {
+      15% {
+        transform: translateX(0);
+      }
+
+      45% {
+        transform: translateX(230px);
+      }
+
+      65% {
+        transform: translateX(230px);
+      }
+
+      95% {
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes loading-text {
+      0% {
+        content: "Loading";
+      }
+
+      25% {
+        content: "Loading.";
+      }
+
+      50% {
+        content: "Loading..";
+      }
+
+      75% {
+        content: "Loading...";
+      }
+    }</style><title>BPIT - VUE</title><link href=/bpit-vue/css/chunk-04711bae.84584a29.css rel=prefetch><link href=/bpit-vue/css/chunk-102bde7c.db451e13.css rel=prefetch><link href=/bpit-vue/css/chunk-106aed25.383e61d5.css rel=prefetch><link href=/bpit-vue/css/chunk-1daf460e.557aa669.css rel=prefetch><link href=/bpit-vue/css/chunk-2281d85e.546f69d7.css rel=prefetch><link href=/bpit-vue/css/chunk-2eb75e1c.6873586b.css rel=prefetch><link href=/bpit-vue/css/chunk-3733a29d.4adabe97.css rel=prefetch><link href=/bpit-vue/css/chunk-53cd1370.08ea9784.css rel=prefetch><link href=/bpit-vue/css/chunk-5499d2d8.b1e0754e.css rel=prefetch><link href=/bpit-vue/css/chunk-5b3f1567.d23ba85f.css rel=prefetch><link href=/bpit-vue/css/chunk-5c6593e2.2c2b5d01.css rel=prefetch><link href=/bpit-vue/css/chunk-629f27ca.79ce6c13.css rel=prefetch><link href=/bpit-vue/css/chunk-6bd734ed.6271a677.css rel=prefetch><link href=/bpit-vue/css/chunk-716af7ac.48ad798b.css rel=prefetch><link href=/bpit-vue/css/chunk-739e48df.15a85036.css rel=prefetch><link href=/bpit-vue/css/chunk-7b65207c.060a904c.css rel=prefetch><link href=/bpit-vue/css/chunk-8e9395e8.21eae4d2.css rel=prefetch><link href=/bpit-vue/css/chunk-b2fb5c80.bb020c78.css rel=prefetch><link href=/bpit-vue/css/chunk-b66a6e1e.45f4edf0.css rel=prefetch><link href=/bpit-vue/css/chunk-c5bd8854.b7545753.css rel=prefetch><link href=/bpit-vue/css/chunk-cc012d5e.3dbdc028.css rel=prefetch><link href=/bpit-vue/css/chunk-d8629e4e.43d93af5.css rel=prefetch><link href=/bpit-vue/js/chunk-04711bae.eb0b613b.js rel=prefetch><link href=/bpit-vue/js/chunk-102bde7c.48a14b49.js rel=prefetch><link href=/bpit-vue/js/chunk-106aed25.9a79f9b3.js rel=prefetch><link href=/bpit-vue/js/chunk-1daf460e.4faa3a9c.js rel=prefetch><link href=/bpit-vue/js/chunk-2281d85e.4b92c17a.js rel=prefetch><link href=/bpit-vue/js/chunk-2eb75e1c.9fc29f10.js rel=prefetch><link href=/bpit-vue/js/chunk-3733a29d.7d522585.js rel=prefetch><link href=/bpit-vue/js/chunk-53cd1370.cd7d9284.js rel=prefetch><link href=/bpit-vue/js/chunk-5499d2d8.e100e015.js rel=prefetch><link href=/bpit-vue/js/chunk-5b3f1567.757c6642.js rel=prefetch><link href=/bpit-vue/js/chunk-5c6593e2.dbda4290.js rel=prefetch><link href=/bpit-vue/js/chunk-629f27ca.fc917ba8.js rel=prefetch><link href=/bpit-vue/js/chunk-6bd734ed.b74174c1.js rel=prefetch><link href=/bpit-vue/js/chunk-716af7ac.6246455e.js rel=prefetch><link href=/bpit-vue/js/chunk-739e48df.6c2cdc82.js rel=prefetch><link href=/bpit-vue/js/chunk-7b65207c.025db1ac.js rel=prefetch><link href=/bpit-vue/js/chunk-8e9395e8.a06bc6b2.js rel=prefetch><link href=/bpit-vue/js/chunk-b2fb5c80.230bbffc.js rel=prefetch><link href=/bpit-vue/js/chunk-b66a6e1e.d3c94752.js rel=prefetch><link href=/bpit-vue/js/chunk-c5bd8854.31dad6aa.js rel=prefetch><link href=/bpit-vue/js/chunk-cc012d5e.00dac33e.js rel=prefetch><link href=/bpit-vue/js/chunk-d8629e4e.b2fcb601.js rel=prefetch><link href=/bpit-vue/css/app.f9eef5f0.css rel=preload as=style><link href=/bpit-vue/js/app.150aa1a0.js rel=preload as=script><link href=/bpit-vue/js/chunk-vendors.2843e6ab.js rel=preload as=script><link href=/bpit-vue/css/app.f9eef5f0.css rel=stylesheet></head><body><noscript><strong>We're sorry but my-project-vuecli doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><a href=https://github.com/dreambo8563/bpit-vue><img style="position: absolute; top: 0; right: 0; border: 0;z-index:10;" src=https://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png alt="Fork me on GitHub"></a><div class=index-loaders-container><div class=container><div class=index-loader><div class=index-loader--dot></div><div class=index-loader--dot></div><div class=index-loader--dot></div><div class=index-loader--dot></div><div class=index-loader--dot></div><div class=index-loader--dot></div><div class=index-loader--text></div></div></div></div><div id=app></div><script src=/bpit-vue/js/chunk-vendors.2843e6ab.js></script><script src=/bpit-vue/js/app.150aa1a0.js></script></body><script>const loaderEl = document.querySelector(".index-loaders-container")
+  loaderEl.className = "hidden index-loaders-container"</script></html>
