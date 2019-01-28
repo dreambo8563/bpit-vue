@@ -125,23 +125,24 @@ import {
   FlockBanner,
   FlockButton,
   GradientButton,
-  HoverAnimation,
   FABContainer,
   FABTrigger,
   FABItem,
   TransformContainer,
-  HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
   BorderInput,
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton,
-  Waves,
-  Bubbling,
-  placeholder
+  SwitchButton
 } from "./index.js";
+import HoverAnimation from "../directives/HoverAnimation";
+import HoverMagicUnderline from "../directives/HoverMagicUnderline";
+import Waves from "../directives/Waves";
+import Bubbling from "../directives/Bubbling";
+
+import placeholder from "../filters/placeholder";
 
 export default {
   name: "HelloWorld",
@@ -155,7 +156,7 @@ export default {
       msg: "Welcome to Your Vue.js App"
     };
   },
-  directives: { ...HoverAnimation, ...HoverMagicUnderline, Waves, Bubbling },
+  directives: { HoverAnimation, HoverMagicUnderline, Waves, Bubbling },
   filters: {
     placeholder
   },
@@ -180,7 +181,7 @@ export default {
       this.expand = !this.expand;
     },
     log() {
-      console.log("log here");
+      // console.log("log here");
     }
   },
   mounted() {

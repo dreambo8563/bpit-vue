@@ -1,6 +1,6 @@
-function hoverMagicUnderline(el, binding) {
-  const injectStyle = require("../../utils/injectStyle").default;
-  const id = require("../../utils/getID").default.getNew();
+function bind(el, binding) {
+  const injectStyle = require("../../src/utils/injectStyle").default;
+  const id = require("../../src/utils/getID").default.getNew();
 
   el.classList.add("bpit-hover-magic-underline", "inject" + id);
   const styles = `
@@ -22,7 +22,5 @@ function hoverMagicUnderline(el, binding) {
 }
 
 export default {
-  HoverMagicUnderline: {
-    bind: hoverMagicUnderline
-  }
+  bind
 };

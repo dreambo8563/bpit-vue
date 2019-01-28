@@ -1,6 +1,6 @@
-function hoverAnimation(el, binding) {
-  const injectStyle = require("../../utils/injectStyle").default;
-  const id = require("../../utils/getID").default.getNew();
+function bind(el, binding) {
+  const injectStyle = require("../../src/utils/injectStyle").default;
+  const id = require("../../src/utils/getID").default.getNew();
 
   el.classList.add("bpit-hover-animation", "inject" + id);
   const styles = `
@@ -75,7 +75,5 @@ function hoverAnimation(el, binding) {
 }
 
 export default {
-  HoverAnimation: {
-    bind: hoverAnimation
-  }
+  bind
 };

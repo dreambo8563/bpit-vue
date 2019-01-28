@@ -13,15 +13,6 @@ import RadioButton from "./components/RadioButton";
 import RadioGroup from "./components/RadioGroup";
 import SwitchButton from "./components/SwitchButton";
 
-// directives
-import HoverAnimation from "./components/HoverAnimation";
-import HoverMagicUnderline from "./components/HoverMagicUnderline";
-import Waves from "./components/Waves";
-import Bubbling from "./components/Bubbling";
-
-// filters
-import placeholder from "./components/Filters/placeholder";
-
 export {
   FlockBanner,
   FlockButton,
@@ -29,19 +20,14 @@ export {
   FABTrigger,
   FABItem,
   GradientButton,
-  HoverAnimation,
   TransformContainer,
-  HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
   BorderInput,
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton,
-  Waves,
-  Bubbling,
-  placeholder
+  SwitchButton
 };
 
 export default {
@@ -51,17 +37,12 @@ export default {
   FABTrigger,
   FABItem,
   GradientButton,
-  HoverAnimation,
   TransformContainer,
-  HoverMagicUnderline,
   BouncingLoader,
   DonutSpinner,
   BorderInput,
   LabelInput,
   RadioButton,
   RadioGroup,
-  SwitchButton,
-  Waves,
-  Bubbling,
-  placeholder
+  SwitchButton
 };
