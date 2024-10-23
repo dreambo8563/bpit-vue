@@ -16,7 +16,7 @@
     "url": "https://github.com/dreambo8563/bpit-vue.git"
   },
   "dependencies": {
-    "vue": "^2.5.17"
+    "vue": "^3.0.0"
   },
   "bugs": {
     "url": "https://github.com/dreambo8563/bpit-vue/issues"
